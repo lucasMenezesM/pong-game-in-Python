@@ -8,19 +8,12 @@ class ScoreBoard(Turtle):
         self.left_score = Writer(fontsize=35, text=0, position=(-50, 230))
         self.right_score = Writer(fontsize=35, text=0, position=(50, 230))
 
-        # self.write(arg=self.left_score, position=(50, 230))
-        # self.write(arg=self.right_score, position=(-50, 230))
-
     def increase_left_score(self):
-        # self.left_score += 1
-        # self.clear()
-        # self.update_score()
+
         self.left_score.change_text(text=int(self.left_score.text) + 1)
 
     def increase_right_score(self):
-        # self.right_score += 1
-        # self.clear()
-        # self.update_score()
+
         self.right_score.change_text(text=int(self.right_score.text) + 1)
 
     def clear_scores(self):
